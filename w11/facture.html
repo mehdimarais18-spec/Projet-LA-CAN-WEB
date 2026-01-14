@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAN - Facture</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="CAN.png" alt="Logo CAN">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="cartes.html">Cartes d'embarquement</a></li>
+            <li><a href="facture.html">Facture</a></li>
+            <li><a href="tableau_bord.html">Tableau de bord</a></li>
+            <li><a href="stats.html">Statistiques</a></li>
+        </ul>
+    </nav>
+    <main class="centre">
+        <h1>Facture</h1>
+        <form id="form-recherche-facture">
+            <p>
+                <label for="num-resa-facture">Numéro de réservation : </label>
+                <input type="text" id="num-resa-facture" name="num-resa">
+                <input type="submit" value="Voir la facture">
+            </p>
+        </form>
+        <section id="zone-facture"></section>
+    </main>
+    <footer>
+        <p>@ 2025 CAN - Projet W11</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

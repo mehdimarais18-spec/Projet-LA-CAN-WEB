@@ -1,0 +1,237 @@
+/* ===========================================
+   MISE EN PAGE GLOBALE
+   =========================================== */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+/* On centre les éléments principaux */
+header, nav ul, main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ===========================================
+   NAVIGATION
+   =========================================== */
+nav ul {
+    /* On force la ligne (row) car le header était en colonne */
+    flex-direction: row;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    padding: 10px 15px;
+    display: block;
+}
+
+nav a:hover {
+    background-color: rgb(245, 205, 26);
+    border-radius: 5px;
+    color: black;
+}
+
+/* ===========================================
+   TABLEAUX (Facture & Tableau de bord)
+   =========================================== */
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+/* Bordures noires par défaut (pour la facture) */
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+/* ===========================================
+   COULEURS (Utilisées par le JS)
+   =========================================== */
+.vert { color: green; font-weight: bold; }
+.orange { color: orange; font-weight: bold; }
+.rouge { color: red; font-weight: bold; }
+
+/* ===========================================
+   PIED DE PAGE
+   =========================================== */
+footer {
+    margin-top: auto;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: right;
+}
+
+/* ===========================================
+   CARTE D'EMBARQUEMENT
+   =========================================== */
+.carte {
+    display: flex;
+    flex-direction: row;
+    width: 800px; /* Largeur fixe sur PC */
+    margin: 20px auto;
+    background-color: #005b8e;
+    color: white;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+/* --- Partie Gauche (Bleue) --- */
+.carte-gauche {
+    width: 40%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.bloc-logo {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    color: #005b8e;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.bloc-logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+/* Tableau spécifique à la carte (sans bordures) */
+.tableau-gauche {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 8px;
+}
+
+.tableau-gauche th {
+    text-align: left;
+    color: white;
+    font-weight: normal;
+    border: none; /* Enlève le trait noir */
+}
+
+.tableau-gauche td {
+    background-color: white; /* Case blanche */
+    color: black;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+    border: none; /* Enlève le trait noir */
+}
+
+/* --- Partie Droite (Ticket) --- */
+.carte-droite {
+    width: 60%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.carte-droite h2 {
+    margin: 5px 0 10px 0;
+    text-align: right;
+    padding-right: 15px;
+}
+
+.ticket-blanc {
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+    margin: 0 10px 10px 10px;
+    padding: 15px;
+    flex-grow: 1; /* Prend toute la hauteur */
+    display: flex;
+    flex-direction: column;
+}
+
+hr {
+    width: 100%;
+    border: 1px solid black;
+    margin: 10px 0;
+}
+
+.tableau-details {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tableau-details td {
+    padding: 3px 0;
+    vertical-align: top;
+    border: none;
+}
+
+/* Pagination (cachée par défaut) */
+#pagination-controles {
+    display: none;
+    margin-top: 20px;
+}
+
+/* ===========================================
+   RESPONSIVE (Version Mobile - Du cours)
+   =========================================== */
+
+/* Tablette */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .carte { width: 90%; }
+}
+
+/* Grand Smartphone */
+@media (min-width: 481px) and (max-width: 767px) {
+    .carte {
+        width: 95%;
+        flex-direction: column;
+        height: auto;
+    }
+    .carte-gauche, .carte-droite {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    nav ul { flex-wrap: wrap; }
+}
+
+/* Petit Smartphone */
+@media (max-width: 480px) {
+    body { font-size: 14px; }
+    
+    .carte {
+        width: 100%;
+        flex-direction: column;
+        border-radius: 0;
+        margin: 10px 0;
+    }
+    .carte-gauche, .carte-droite { width: 100%; }
+    
+    nav a { font-size: 14px; padding: 5px; }
+    .bloc-logo img { height: 30px; }
+}
+
+
+
+.jaune {
+    color: #DFFF00; /* Jaune fluo lisible */
+    background-color: #333; /* Fond sombre pour que le jaune fluo ressorte */
+    padding: 2px 5px;
+    border-radius: 4px;
+    font-weight: bold;
+}

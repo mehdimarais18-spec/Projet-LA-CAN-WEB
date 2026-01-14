@@ -1,0 +1,15 @@
+{
+  "id": 5,
+  "nom": "Addams",
+  "nbPassagers": 5,
+  "nbVehicules": 1,
+  "portDepart": "Lorient",
+  "portArrivee": "Groix",
+  "date": "2025-11-01",
+  "heure": "09:45",
+  "prixPassager": "13.80 €",
+  "totalPassagers": "69.00 €",
+  "prixVehicule": "210.90 €",
+  "totalVehicules": "210.90 €",
+  "prixTotal": "279.90 €"
+}

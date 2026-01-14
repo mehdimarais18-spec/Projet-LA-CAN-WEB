@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAN - Cartes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="CAN.png" alt="Logo CAN">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="cartes.html">Cartes d'embarquement</a></li>
+            <li><a href="facture.html">Facture</a></li>
+            <li><a href="tableau_bord.html">Tableau de bord</a></li>
+            <li><a href="stats.html">Statistiques</a></li>
+        </ul>
+    </nav>
+    <main class="centre">
+        <h1>Vos Cartes d'embarquement</h1>
+        
+        <form id="form-recherche">
+            <p>
+                <label for="num-resa">Numéro de réservation : </label>
+                <input type="text" id="num-resa" name="num-resa">
+                <input type="submit" value="Rechercher">
+            </p>
+        </form>
+
+        <section id="zone-cartes"></section>
+
+        <section id="pagination-controles">
+            <button id="btn-precedent">Précédent</button>
+            <p id="info-page" style="display:inline; margin: 0 15px;">Page 1</p>
+            <button id="btn-suivant">Suivant</button>
+        </section>
+    </main>
+    <footer><p>@ 2025 CAN - Projet W11</p></footer>
+    <script src="script.js"></script>
+</body>
+</html>
