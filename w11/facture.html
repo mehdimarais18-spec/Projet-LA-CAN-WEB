@@ -28,7 +28,70 @@
                 <input type="submit" value="Voir la facture">
             </p>
         </form>
-        <section id="zone-facture"></section>
+
+        <section id="zone-facture">
+            <article id="facture-contenu">
+                
+                <h2>Détails de la facture</h2>
+                
+                <p>
+                    <strong>Date d'émission :</strong> <span id="fac-date-emission"></span><br>
+                    <strong>Réservation n° :</strong> <span id="fac-num-resa"></span><br>
+                    <strong>Nom :</strong> <span id="fac-nom"></span>
+                </p>
+
+                <p>
+                    <strong>Traversée :</strong> <span id="fac-trajet"></span><br>
+                    <strong>Date :</strong> <span id="fac-date-depart"></span><br>
+                    <strong>Départ :</strong> <span id="fac-heure-depart"></span><br>
+                    <strong>Bateau :</strong> <span id="fac-bateau">Breizh Nevez</span>
+                </p>
+
+                <h3>Les personnes</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Catégorie</th>
+                            <th>Nombre</th>
+                            <th>Prix unitaire</th>
+                            <th>Prix ligne</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody-passagers">
+                        </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3"><strong>Sous-total personnes :</strong></td>
+                            <td id="total-passagers"></td>
+                        </tr>
+                    </tfoot>
+                </table>
+
+                <h3>Les véhicules</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Catégorie</th>
+                            <th>Quantité</th>
+                            <th>Prix unitaire</th>
+                            <th>Prix ligne</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody-vehicules">
+                        </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3"><strong>Sous-total véhicules :</strong></td>
+                            <td id="total-vehicules"></td>
+                        </tr>
+                    </tfoot>
+                </table>
+
+                <h3>Prix total : <span id="fac-total-general"></span></h3>
+            </article>
+            
+            <p id="message-statut"></p>
+        </section>
     </main>
     <footer>
         <p>@ 2025 CAN - Projet W11</p>

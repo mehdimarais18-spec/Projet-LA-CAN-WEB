@@ -21,22 +21,34 @@
     </nav>
     <main class="centre">
         <h1>Départs et Horaires</h1>
+        
         <section>
-            <label for="date-selection">Sélectionner une date : </label>
+            <label for="liaison-selection">Liaison : </label>
+            <select id="liaison-selection">
+                <option value="1">Lorient -> Groix</option>
+                <option value="2">Groix -> Lorient</option>
+                <option value="3">Quiberon -> Le Palais</option>
+                <option value="4">Le Palais -> Quiberon</option>
+            </select>
+
+            <label for="date-selection">Date : </label>
             <input type="date" id="date-selection">
-            <button id="btn-actualiser">Voir</button>
+            
+            <button id="btn-actualiser">Voir les horaires</button>
         </section>
-        <table>
+        
+        <table id="tableau-resultats">
             <thead>
                 <tr>
                     <th>Heure</th>
                     <th>Bateau</th>
-                    <th>Passagers</th>
-                    <th>Véhicules</th>
+                    <th>Passagers<br>(Remplissage)</th>
+                    <th>Véhicules<br>(Remplissage)</th>
                     <th>État</th>
                 </tr>
             </thead>
-            <tbody id="corps-tableau"></tbody>
+            <tbody id="corps-tableau">
+                </tbody>
         </table>
     </main>
     <footer>

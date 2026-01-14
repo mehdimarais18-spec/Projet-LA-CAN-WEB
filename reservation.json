@@ -1,0 +1,32 @@
+[
+  {
+    "reservation": {
+      "nom": "fzef",
+      "idLiaison": 1,
+      "date": "2025-11-24",
+      "heure": "11:00",
+      "horodatage": "2026-01-14 22:09:33"
+    },
+    "passagers": [
+      {
+        "nom": "fezf",
+        "prenom": "zef",
+        "codeCategorie": "jeu1825"
+      }
+    ],
+    "vehicules": [
+      {
+        "codeCategorie": "cat3",
+        "quantite": 3
+      },
+      {
+        "codeCategorie": "cat3",
+        "quantite": 3
+      },
+      {
+        "codeCategorie": "cat3",
+        "quantite": 3
+      }
+    ]
+  }
+]
